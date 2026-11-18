@@ -34,6 +34,16 @@ Petr Macek (petr.macek@kostax.cz)
 Copy directory topx to plugins directory  
 Check file permission (Linux/unix - readable for www server)  
 Enable plugin (Console -> Plugin management)   
+
+Users who are not administrators need the **Plugin topx - view** realm to open
+the TopX page.
+
+## Source definitions
+
+The source definitions that TopX ranks are seeded into the `plugin_topx_source`
+table by `setup.php` when the plugin is installed. There is no page for
+configuring them. To add another data source, edit `setup.php` and `topx.php`
+as described in [HOW_TO_ADD_YOUR_DATA.txt](HOW_TO_ADD_YOUR_DATA.txt).
     
 ## Upgrade
 
