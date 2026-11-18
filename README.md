@@ -1,8 +1,28 @@
 # plugin_topx for Cacti
 
-## TopX
-Displays hights and lows (example: most utilization CPU, interface traffic, ..)
-~~Topx allows you to add an arithmetic operation or combine data source (example: discard and error traffic together, ..)~~
+TopX ranks data sources by average or peak values using Cacti’s native Data
+Source Statistics, for example CPU usage or interface traffic. Its configured
+source definitions also support arithmetic operations. Enable Data Source
+Statistics and allow it to collect samples before using TopX.
+
+## Versions and compatibility
+
+This README describes the `master` source branch.
+
+| Code | Plugin version | Minimum Cacti declared in `INFO` |
+| --- | --- | --- |
+| [Source branch](INFO) | 0.7 | 1.0.0 |
+| [Published 0.7](https://github.com/Cacti/plugin_topx/releases/tag/0.7) | 0.6 | 1.0.0 |
+
+Use the published release’s assets and tagged documentation when installing that
+package. Branch code can include later changes, even when its version number
+matches the release. Cacti’s own PHP and database requirements also apply.
+
+The release tag and embedded plugin version differ; the table quotes the
+metadata shipped in that tag.
+
+Install this plugin in **`<cacti-root>/plugins/topx`**, using the directory
+name `topx` rather than `plugin_topx`.
 
 ## Author
 Petr Macek (petr.macek@kostax.cz)
