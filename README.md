@@ -35,12 +35,20 @@ Copy directory topx to plugins directory
 Check file permission (Linux/unix - readable for www server)  
 Enable plugin (Console -> Plugin management)   
     
-## Upgrade    
-Copy and rewrite files  
-Check file permission (Linux/unix - readable for www server)  
-Disable and deinstall old version (Console -> Plugin management)   
-Install and enable new version (Console -> Plugin management)   
-    
+## Upgrade
+
+Back up the Cacti database and the plugin directory before replacing files.
+Check the instructions for the version being installed and test the update on
+a copy of the installation first. This branch has no schema-migration hook;
+replacing files alone does not migrate an older database layout.
+
+The historical procedure was to replace the code, disable and uninstall the
+old plugin, then install and enable it again. **That is a reset:** the uninstall
+hook drops `plugin_topx_source` and `plugin_topx_average`, including customized
+source definitions and stored averages. Do not use this procedure when those
+records must be preserved without first arranging and testing their migration
+or restoration from backup.
+
 ## Possible Bugs or any ideas?
 If you find a problem, let me know via github or https://forums.cacti.net/viewtopic.php?f=5&t=56129
    
