@@ -11,7 +11,7 @@ This README describes the `master` source branch.
 
 | Code | Plugin version | Minimum Cacti declared in `INFO` |
 | --- | --- | --- |
-| [Source branch](INFO) | 0.7 | 1.0.0 |
+| [Source branch](https://github.com/Cacti/plugin_topx/blob/master/INFO) | 0.7 | 1.0.0 |
 | [Published 0.7](https://github.com/Cacti/plugin_topx/releases/tag/0.7) | 0.6 | 1.0.0 |
 
 Use the published release’s assets and tagged documentation when installing that
@@ -43,7 +43,7 @@ the TopX page.
 The source definitions that TopX ranks are seeded into the `plugin_topx_source`
 table by `setup.php` when the plugin is installed. There is no page for
 configuring them. To add another data source, edit `setup.php` and `topx.php`
-as described in [HOW_TO_ADD_YOUR_DATA.txt](HOW_TO_ADD_YOUR_DATA.txt).
+as described in [HOW_TO_ADD_YOUR_DATA.txt](https://github.com/Cacti/plugin_topx/blob/master/HOW_TO_ADD_YOUR_DATA.txt).
     
 ## Upgrade
 
